@@ -3,6 +3,29 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+const parrotList = [
+  {
+    species: "Arras",
+    name: "Coco",
+    imgSrc: "./assets/redParrot.png"
+  },
+  {
+    species: "Gabon Gray",
+    name: "Snoopy",
+    imgSrc: "./assets/gabonGray.png"
+  },
+  {
+    species: "Amazon",
+    name: "Jacko",
+    imgSrc: "./assets/amazon.png",
+  },
+  {
+    species: "Macaws",
+    name: "Polly",
+    imgSrc: "./assets/arras.png",
+  },
+]
+
 function App() {
   const [count, setCount] = useState(0)
 
