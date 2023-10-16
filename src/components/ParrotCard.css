@@ -1,0 +1,57 @@
+.parrot-pic {
+    width:100%;
+    object-fit: cover;
+}
+
+.pic-container {
+    background-color:rgba(245, 187, 15, 0.737);
+    justify-items: center;
+    width: 600px;
+    border-radius: 50%;
+
+}
+
+.title {
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    -webkit-text-stroke: 1px black;
+  }
+
+@keyframes parrot-spin {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+  
+  @media (prefers-reduced-motion: no-preference) {
+.parrot-pic {
+      animation: parrot-spin infinite 5s ease;
+    }
+  }
