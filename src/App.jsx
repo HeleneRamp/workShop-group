@@ -8,38 +8,49 @@ const parrotList = [
   {
     species: "Ara",
     name: "Coco",
-    imgSrc: "./img/redParrot.png"
+    imgSrc: "./img/redParrot2.png",
+    sing: "/sound/BirdSongAra.mp3",
   },
   {
     species: "Gabon Gray",
     name: "Snoopy",
-    imgSrc: "./img/gabonGrey.png"
+    imgSrc: "./img/gabonGrey.png",
+    sing: "/sound/BirdSongGabon.mp3",
   },
   {
     species: "Amazon",
     name: "Jacko",
-    imgSrc: "./img/amazon.png",
+    imgSrc: "./img/amazon2.png",
+    sing: "/sound/BirdSongAmazon.mp3"
   },
   {
-    species: "Macaws",
+    species: "Cockatoo",
     name: "Polly",
-    imgSrc: "./img/arras.png",
+    imgSrc: "./img/cockatoo.png",
+    sing: "/sound/BirdSongCockatoo.mp3"
   },
+  {
+    species: "Budgie",
+    name: "Banjo",
+    imgSrc: "./img/budgie.png",
+    sing: "/sound/BirdSongBudgie2.mp3",
+  }
 ]
 
 function App() {
 
-  const [parrotIndex, setParrotIndex]=useState(0)
+  const [parrotIndex, setParrotIndex] = useState(0)
 
   return (
     <>
-      <h1 className='titleH1'>Parrot Land</h1>   
-      <ParrotCard parrotList={parrotList[parrotIndex]}/>
+
+      <ParrotCard parrotList={parrotList[parrotIndex]} />
       <NavBar
-      parrotIndex={parrotIndex}
-      setParrotIndex={setParrotIndex}
-      parrotList={parrotList}
-      /> 
+        parrotIndex={parrotIndex}
+        setParrotIndex={setParrotIndex}
+        parrotList={parrotList}
+        parrot ={parrotList[parrotIndex]}
+      />
     </>
   )
 }

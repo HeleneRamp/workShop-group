@@ -1,6 +1,13 @@
 import "./NavBar.css"
 
-function NavBar({parrotIndex, setParrotIndex, parrotList}) {
+function NavBar({parrotIndex, setParrotIndex, parrotList, parrot}) {
+console.log(parrotList);
+
+    let audio = new Audio(parrot.sing)
+
+    const start = () => {
+        audio.play();
+    }
     
     const previousClick = () => {
         setParrotIndex(parrotIndex -1)
@@ -13,8 +20,9 @@ function NavBar({parrotIndex, setParrotIndex, parrotList}) {
     return ( 
         <>
         <div>
-        <button className={parrotIndex === 0 ? "hidden" : "btn previous"} onClick={previousClick}>Previous</button>
-        <button className={parrotIndex === parrotList.length -1 ? "hidden" : "btn next"} onClick={nextClick}>Next</button>
+        <button className={parrotIndex === 0 ? "btn hidden" : "btn previous"} disabled={parrotIndex === 0} onClick={previousClick}>Previous</button>
+        <button className="btn song" onClick={start}>🎵</button>
+        <button className={parrotIndex === parrotList.length -1 ? "btn hidden" : "btn next"} disabled={parrotIndex === parrotList.length -1} onClick={nextClick}>Next</button>
         </div>
         </>
      );

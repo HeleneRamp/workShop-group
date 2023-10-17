@@ -3,6 +3,7 @@ import "./ParrotCard.css"
 function ParrotCard({parrotList}) {
     return (  
         <>
+        <h1 className='titleH1'>Parrot Paradise</h1> 
             <div className="pic-container">
         <img src={parrotList.imgSrc} className="parrot-pic"/>
             </div>
