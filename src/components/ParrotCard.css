@@ -4,6 +4,7 @@
     font-size: 5rem;
     color:darkorange;
     -webkit-text-stroke: 3px black;
+    filter: drop-shadow(20px 15px 4px #000000a9);
   }
 
 .parrot-pic {
