@@ -1,4 +1,4 @@
-*[class^="btn"] {
+.btn {
     width: 180px;
     padding: 1rem;
     border-radius: 5px;
@@ -10,6 +10,16 @@
     font-size: x-large;
     background-color: darkorange;
     opacity: 80%;
+  
+}
+.btn:hover{
+   transform: scale(1.15);
+   transition: 500ms ease;
+  
+}
+.box{
+    display:flex;
+    gap: 15px;
   
 }
 .hidden{

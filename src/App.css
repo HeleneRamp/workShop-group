@@ -3,23 +3,23 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
-*{
+
+* {
   -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 body {
   background-image: url("/img/TropicalJungle.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 
 }
-
-
