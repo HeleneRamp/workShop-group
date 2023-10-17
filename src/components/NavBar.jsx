@@ -1,4 +1,5 @@
 import "./NavBar.css"
+import PropTypes from "prop-types"
 
 function NavBar({parrotIndex, setParrotIndex, parrotList, parrot}) {
     
@@ -27,5 +28,7 @@ function NavBar({parrotIndex, setParrotIndex, parrotList, parrot}) {
         </>
      );
 }
-
+NavBar.propTypes ={
+    parrot: PropTypes.shape
+}
 export default NavBar;

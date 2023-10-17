@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import "./ParrotCard.css"
+
 function ParrotCard({parrotList}) {
     return (  
         <>
